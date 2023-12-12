@@ -1,7 +1,11 @@
+import Dashboard from "./components/Dashboard"
+import Sidebar from "./components/Sidebar"
+
 function App() {
   return (
-    <div>
-			<h1>Hello World</h1>
+    <div className="flex border min-h-screen">
+			<Sidebar />
+			<Dashboard />
     </div>
   )
 }
