@@ -1,8 +1,12 @@
+import { useSelect } from "../context/Select"
+
 function Dashboard() {
+	const { selected } = useSelect()
+
 	return (
-		<aside>
-			<h1>dashboard</h1>
-		</aside>
+		<section>
+			<h1>{selected}</h1>
+		</section>
 	)
 }
 
