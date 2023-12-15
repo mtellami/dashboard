@@ -1,7 +1,8 @@
 function Stock() {
 	return (
-		<section>
-			Stock
+		<section className="p-4 text-3xl font-bold">
+			<h1 className="capitalize">available products</h1>
+			<div></div>
 		</section>
 	)
 }
