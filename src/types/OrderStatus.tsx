@@ -1,8 +1,8 @@
 enum OrderStatus {
-	Requested,
-	Confirmed,
-	Shipping,
-	Delivered
+	Requested = 'requested',
+	Confirmed = 'confirmed',
+	Shipping = 'shipping',
+	Delivered = 'delivered'
 }
 
 export default OrderStatus

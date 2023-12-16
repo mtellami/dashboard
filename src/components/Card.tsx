@@ -1,7 +1,8 @@
-function Card({ item, index }: { item: any, index: number }) {
+function Card({ item }: { item: any }) {
 	const Icon = item.icon
+
 	return (
-		<li key={index} className={`${item.background} basis-[23%] p-8 rounded-lg text-gray-700 flex items-center justify-between`}>
+		<li className={`${item.background} basis-[23%] p-8 rounded-lg text-gray-700 flex items-center justify-between`}>
 			<Icon className="text-5xl" />
 			<div className="flex flex-col items-center">
 				<h1 className="font-bold text-2xl">{item.count < 10 ? `0${item.count}` : item.count}</h1>
