@@ -6,7 +6,6 @@ import Card from './Card'
 import { BsThreeDotsVertical } from "react-icons/bs"
 import Order from './Order'
 
-
 function Orders() {
 	const { mode } = useSelect()
 	const [cards, setCards] = useState<any[]>([])
@@ -26,7 +25,7 @@ function Orders() {
 			</ul>
 			<div className='flex justify-between my-8'>
 				<h1 className="capitalize text-2xl">recent orders</h1>
-				<div className='p-2 bg-gray-100 shadow text-xl rounded text-gray-800'>
+				<div className='py-2 bg-gray-100 shadow text-xl rounded text-gray-800 hover:bg-gray-200'>
 					<BsThreeDotsVertical />
 				</div>
 			</div>
