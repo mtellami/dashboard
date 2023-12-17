@@ -67,6 +67,6 @@ export const pages = new Map([
 	['analytics', Analytics]
 ])
 
-export const DARK = 'dark'
-export const LIGHT = 'light'
-export const NAME = 'ordery'
+export const DARK = 'dark', LIGHT = 'light', NAME = 'ordery'
+
+export	const headers = ['order', 'date', 'price', 'status', '']

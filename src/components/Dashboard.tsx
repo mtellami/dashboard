@@ -15,12 +15,12 @@ function Dashboard() {
 		<section className={`basis-4/5 ${bg} ${text} flex flex-col`}>
 			<header className="basis-1/12 p-12 flex items-center justify-between">
 				<div className="relative basis-1/3">
-					<input type="text" placeholder="Search" className={`focus:outline-0 rounded-full py-3 px-5 w-full ${search}`} />
+					<input type="text" placeholder="Search" className={`shadow focus:outline-0 rounded-full py-3 px-5 w-full ${search}`} />
 					<IoMdSearch className="absolute text-2xl top-3 right-4 text-gray-700 cursor-pointer" />
 				</div>
 				<div className="flex items-center gap-4">
 					<h2 className="text-xl font-bold capitalize">administrator</h2>
-					<div className={`${mode === DARK ? 'bg-gray-900' : 'bg-gray-50'}  p-3 text-3xl rounded-full`} >
+					<div className={`${mode === DARK ? 'bg-gray-900' : 'bg-gray-50'}  p-3 text-3xl rounded-full shadow`} >
 						<FaUser className="cursor-pointer"/>
 					</div>
 				</div>

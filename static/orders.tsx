@@ -48,5 +48,5 @@ export const orders = [
 			address: '93 street New York',
 			phone: '+1932384122'
 		}
-	}
+	},
 ]
