@@ -5,12 +5,15 @@ const SelectContext = createContext({
 	selected: 'orders',
 	select: (_: string) => {},
 	mode: 'light',
-	toggle: () => {}
+	toggle: () => {},
+	open: false,
+	togglePopup: () => {}
 })
 
 export const SelectProvider = ({ children }: {children: React.ReactNode}) => {
 	const [selected, select] = useState('orders')
 	const [mode, setMode] = useState('light')
+	const [open, setOpen] = useState<boolean>(false)
 
 	useEffect(() => {
 		const previous = localStorage.getItem('mode')
@@ -29,8 +32,13 @@ export const SelectProvider = ({ children }: {children: React.ReactNode}) => {
 		}
 	}
 
+	function togglePopup() {
+		console.log(open)
+		setOpen(!open)
+	}
+
 	return (
-		<SelectContext.Provider value={{ selected, select, mode, toggle }}>
+		<SelectContext.Provider value={{ selected, select, mode, toggle, open, togglePopup }}>
 			{children}
 		</SelectContext.Provider>
 	)
