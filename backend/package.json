@@ -7,8 +7,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
-    "dev": "nest start",
-    "start:dev": "nest start --watch"
+    "start": "nest start",
+    "dev": "nest start --watch"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
