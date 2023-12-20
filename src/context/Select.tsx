@@ -9,7 +9,7 @@ const SelectContext = createContext({
 })
 
 export const SelectProvider = ({ children }: {children: React.ReactNode}) => {
-	const [selected, select] = useState('orders')
+	const [selected, select] = useState('stock')
 	const [mode, setMode] = useState('light')
 
 	useEffect(() => {
