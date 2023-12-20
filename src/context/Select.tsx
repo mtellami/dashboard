@@ -4,13 +4,13 @@ import { DARK, LIGHT } from '../utils/constants'
 const SelectContext = createContext({
 	selected: 'orders',
 	select: (_: string) => {},
-	mode: 'light',
+	mode: LIGHT,
 	toggle: () => {}
 })
 
 export const SelectProvider = ({ children }: {children: React.ReactNode}) => {
-	const [selected, select] = useState('stock')
-	const [mode, setMode] = useState('light')
+	const [selected, select] = useState('analytics')
+	const [mode, setMode] = useState(LIGHT)
 
 	useEffect(() => {
 		const previous = localStorage.getItem('mode')
