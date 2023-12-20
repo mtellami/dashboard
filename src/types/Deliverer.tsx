@@ -1,5 +1,6 @@
 type Deliverer = {
 	name: string,
+	avatar: string,
 	zone: string,
 	shipped: number,
 	return: number,

@@ -1,12 +1,12 @@
-import { CgProfile } from "react-icons/cg"
 import { useSelect } from "../context/Select"
+import Deliverer from "../types/Deliverer"
 import { DARK } from "../utils/constants"
 
 function reform(n: number) {
 	return n < 10 ? `0${n}` : n
 }
 
-function Info({ person }: {person: any}) {
+function Info({ person }: {person: Deliverer}) {
 	const { mode } = useSelect()
 
 	const background = mode === DARK ? 'bg-gray-300' : 'bg-gray-50'
@@ -18,8 +18,8 @@ function Info({ person }: {person: any}) {
 
 	return (
 		<li className={`p-2 rounded shadow text-gray-700 ${background} w-[45%] lg:w-1/5 grow flex flex-col items-center`}>
-			<div className="p-4 text-9xl">
-				<CgProfile />
+			<div className="p-4 w-40 overflow-hidden">
+				<img src={person.avatar} className="shadow rounded-full" />
 			</div>
 			<h1 className="font-bold uppercase">{person.name}</h1>
 			<h4 className="font-light text-xl capitalize tracking-wider my-1">{person.zone}</h4>
